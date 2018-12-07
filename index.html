@@ -1,0 +1,316 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
+<style>
+body{
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+background-color:#DCF8FB;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #FFFFFF;}
+
+#box1 {
+position:absolute;
+background-image: url('https://i.imgur.com/bXp3DBU.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:25%;
+height:30%;
+left:32%;
+top:18%;
+}
+
+#box2 {
+position:absolute;
+background-image: url('https://i.imgur.com/WxgYrOk.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:10%;
+height:30%;
+left:58%;
+top:18%;
+}
+
+#box3 {
+position:absolute;
+background-image: url('https://i.imgur.com/ZiyQKrX.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:10%;
+height:30%;
+left:32%;
+top:50%;
+}
+
+#box4 {
+position:absolute;
+background-image: url('https://i.imgur.com/N7CeGzq.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+width:25%;
+height:30%;
+left:43%;
+top:50%;
+}
+
+#holder {
+position:absolute;
+background-color:#DCF8FB;
+width:16%;
+height:20%;
+top:39%;
+left:42%;
+}
+
+#textbox1 {
+position:absolute;
+background-color:#96DDEF;
+overflow:auto;
+width:12%;
+height:30%;
+left:19%;
+top:18%;
+}
+
+#textbox2 {
+position:absolute;
+background-color:#96DDEF;
+overflow:auto;
+width:12%;
+height:30%;
+left:19%;
+top:50%;
+}
+
+#textbox3 {
+position:absolute;
+background-color:#96DDEF;
+overflow:auto;
+width:12%;
+height:30%;
+left:69%;
+top:18%;
+}
+
+#textbox4 {
+position:absolute;
+background-color:#96DDEF;
+overflow:auto;
+width:12%;
+height:30%;
+left:69%;
+top:50%;
+}
+
+#titlebox {
+position:absolute;
+background-color:#C1F0F6;
+border-bottom:2px dashed #FFFFFF;
+width:100%;
+height:15%;
+top:0%;
+left:0%;
+}
+
+#text {
+position:absolute;
+padding:2%;
+width:86%;
+height:72%;
+top:20%;
+left:5%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Crimson Text', serif;
+}
+
+#text1 {
+position:absolute;
+padding:2%;
+width:86%;
+height:72%;
+top:20%;
+left:5%;
+color:#000000;
+font-size:1.5vh;
+font-family: 'Crimson Text', serif;
+}
+
+#title {
+position:absolute;
+width:94%;
+height:70%;
+left:3%;
+top:15%;
+color:#55C1E8;
+text-align:center;
+font-size:3vh;
+font-family: 'Charmonman', cursive;
+line-height:1.5;
+}
+
+#tabbox1 {
+position:absolute;
+background-image: url('https://i.imgur.com/a2Yxa2Q.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:14%;
+height:7%;
+top:41%;
+left:43%;
+}
+
+#tabbox2 {
+position:absolute;
+background-image: url('https://i.imgur.com/8zlBM2b.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+width:14%;
+height:7%;
+top:50%;
+left:43%;
+}
+
+.tabs{
+display:block;
+opacity:1;
+width:100%;
+height:100%;
+text-align:center;
+color:#FFFFFF;
+font-family: 'PT Sans Narrow', sans-serif;
+background-color:rgba(150, 221, 239, 0.79);
+text-transform:uppercase;
+letter-spacing:10px;
+font-size:3vh;
+line-height:2.2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4 {
+display: none;
+}
+
+i {
+color:#666666;
+}
+
+a {
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#2D99C0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#2D99C0;
+text-transform:uppercase;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Charmonman|Crimson+Text|PT+Sans+Narrow" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('box2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('box3').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<html>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+<div id="holder"></div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Anina</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Thormiane</span>
+</div>
+
+<div id="textbox1">
+<div id="titlebox">
+<div id="title">
+Basics
+</div>
+</div>
+<div id="text">
+<b>Name:</b> Anina Thormiane<br>
+<b>Race:</b> High Elf (Altmer)<br>
+<b>Profession:</b> Mage, Apprentice<br>
+<b>Age:</b> 18<br>
+<b>Height:</b> 6’0”<br>
+<b>Build:</b> Thin, Athletic<br>
+<b>Alignment:</b> Lawful Neutral 
+</div>
+</div>
+<div id="textbox2">
+<div id="titlebox">
+<div id="title">
+Skills
+</div>
+</div>
+<div id="text">
+<b>Armor:</b> Enchantment<br>
+<b>Major Combat:</b> Conjuration<br>
+<b>Minor Combat:</b> One Handed<br>
+<b>Major Utility:</b> Restoration<br>
+<b>Minor Utility:</b> Smithing<br>
+<b>Major Talent:</b> Alchemy<br>
+<b>Minor Talent:</b> Speech<br>
+</div>
+</div>
+<div id="textbox3">
+<div id="titlebox">
+<div id="title">
+Racials
+</div>
+</div>
+<div id="text">
+<p align="center"><u><b>The Altmer</u></b></p>
+<b>Highborn:</b> Regenerate magicka faster, once a day.<br>
+<b>Fortify Magicka:</b> Passive increase in magicka.<br>
+<b>Lifespan:</b> Age similar to humans but have lifespans upwards of a thousand years.
+<br>
+</div>
+</div>
+<div id="textbox4">
+<div id="titlebox">
+<div id="title">
+Inventory
+</div>
+</div>
+<div id="text1">
+Work in progress.
+</div>
+</div>
+
+<embed style="height: 0%; width: 0%;"src="Anina.mp3" autostart="true" loop="true">
+
+</html>
